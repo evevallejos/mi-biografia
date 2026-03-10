@@ -16,15 +16,24 @@ h3 {
     color: #4a654a;
 }
 
+/* contenedor principal */
 .perfil {
     display: flex;
     gap: 30px;
     margin-top: 40px;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.perfil img {
+/* columna de imágenes */
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* imágenes */
+.imagenes img {
     width: 260px;
     height: 340px;
     object-fit: cover;
@@ -32,6 +41,7 @@ h3 {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* texto */
 .texto {
     flex: 1;
     min-width: 280px;
@@ -48,6 +58,8 @@ h3 {
     padding-left: 15px;
     color: #4a654a;
 }
+
+/* links */
 .links {
     margin-top: 70px;
     text-align: center;
@@ -78,4 +90,3 @@ h3 {
     transform: translateY(0);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-

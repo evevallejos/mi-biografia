@@ -4,19 +4,47 @@ body {
     background: linear-gradient(to bottom, #f7f9f4, #e8efe3);
     color: #2f3a2f;
     line-height: 1.8;
-    padding: 40px;
 }
+
+/* CONTENEDOR GENERAL */
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+/* TITULOS */
 
 h1, h2, h3 {
     text-align: center;
 }
 
+h1{
+    font-size:42px;
+}
+
+h2{
+    font-weight:normal;
+    color:#5c735c;
+}
+
 h3 {
-    margin-top: 50px;
+    margin-top: 60px;
     color: #4a654a;
 }
 
-/* contenedor principal */
+/* INTRO */
+
+.apertura{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    color:#5a6d5a;
+}
+
+/* PERFIL */
+
 .perfil {
     display: flex;
     gap: 30px;
@@ -25,14 +53,14 @@ h3 {
     align-items: flex-start;
 }
 
-/* columna de imágenes */
+/* IMAGENES */
+
 .imagenes {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* imágenes */
 .imagenes img {
     width: 260px;
     height: 340px;
@@ -41,7 +69,8 @@ h3 {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* texto */
+/* TEXTO */
+
 .texto {
     flex: 1;
     min-width: 280px;
@@ -59,7 +88,8 @@ h3 {
     color: #4a654a;
 }
 
-/* links */
+/* BOTONES */
+
 .links {
     margin-top: 70px;
     text-align: center;
@@ -89,4 +119,26 @@ h3 {
 .links a:active {
     transform: translateY(0);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:80px;
+    text-align:center;
+    color:#6b7d6b;
+    font-size:14px;
+}
+
+/* ANIMACION SCROLL */
+
+.aparecer{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.aparecer.visible{
+opacity:1;
+transform:translateY(0);
 }
